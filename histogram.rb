@@ -23,3 +23,10 @@ end
 
 # Reverse the sorted frequencies array.
 frequencies.reverse!
+
+=begin
+Iterate over .each key/value pair in the frequencies hash. Then, puts each word, a single space, and its frequency to the console. Note that we must first convert the value from a number to a string using .to_s before we can concatenate it.
+=end
+frequencies.each do |word, count|
+    puts word + " " + count.to_s
+end
